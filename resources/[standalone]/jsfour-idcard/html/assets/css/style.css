@@ -1,0 +1,168 @@
+@font-face {
+  font-family: justsignature;
+  src: url('../fonts/justsignature/JustSignature.woff');
+}
+body, html {
+  width: 100%;
+  height: 100%;
+}
+p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  color: #222222;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+#id-card {
+  position: relative;
+  display: none;
+  margin: 230px 50px 0 0;
+  float: right;
+  width: 457px;
+  height: 272px;
+  padding: 54px 17px 10px 144px;
+  background: url("../images/idcard.png");
+}
+
+#new-user-photo {
+  height: 160px;
+  width: 128px;
+  overflow: hidden;
+  position: absolute;
+  left: 5px;
+  top: 6px;
+  border-top-left-radius: 10px;
+}
+
+#new-user-photo img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+
+}
+
+#name {
+  font-weight: bolder;
+  font-size: 18px;
+  color: #282828;
+}
+#inline {
+  position: absolute;
+  top: 109px;
+}
+#dob {
+  position: absolute;
+  left: 0;
+  width: 100px;
+}
+#sex {
+  position: absolute;
+  left: 90px;
+}
+#height {
+  position: absolute;
+  left: 150px;
+  width: 60px;
+}
+#lastdigits {
+    position: absolute;
+    left: 205px;
+    width: 60px;
+    top: -87px;
+    font-size: 10px;
+}
+#signature {
+  position: absolute;
+  bottom: 74px;
+  left: 152px;
+  color: #141414;
+  font-size: 35px;
+  text-transform:capitalize;
+  font-family: justsignature;
+}
+#licenses {
+  position: absolute;
+  top: 109px;
+  right: 33px;
+  width: 50px;
+}
+
+#pd-card {
+  position: relative;
+  margin: 50px 50px 0 0;
+  background-color: #111;
+  height: 500px;
+  display: none;
+  flex-direction: row;
+  width: fit-content;
+  padding: 15px;
+  border-radius: 10px;
+  float: right;
+}
+
+.pd-card-sol {
+  width: 350px;
+  background: #d4d2d4;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-family: Arial;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.pd-card-sag {
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pd-card-sag img {
+  height: 400px;
+}
+
+.imgbox {
+  border: 5px solid #fff;
+  border-radius: 3px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.imgbox img {
+  object-fit: cover;
+  width: 100%;
+  min-height: 100%;
+}
+
+.colornamebox {
+  background: #1b1e28;
+  color: #afb4be;
+  font-size: 27px;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+}
+
+#rankbox {
+  margin-top: 25px;
+  color: #000;
+  font-size: 25px;
+}
+
+#namebox {
+  margin-top: 15px;
+  color: #000;
+  font-size: 30px; 
+  text-transform: capitalize;
+}
+
+.numberbox {
+  color: #000;
+  font-size: 34px;  
+}

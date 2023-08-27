@@ -1,0 +1,10 @@
+RegisterNetEvent('tgiann-police:obje-kaydet')
+AddEventHandler('tgiann-police:obje-kaydet', function(data)
+	local xPlayer = QBCore.Functions.GetPlayer(source)
+    xPlayer.Functions.objeData(data)
+end)
+
+QBCore.Functions.CreateCallback('esx_policejob:get-obje', function(source, cb)
+    local xPlayer = QBCore.Functions.GetPlayer(source)
+    cb(xPlayer.PlayerData.obje)
+end)

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D');
+:root {
+    --pixel: calc(1 / 720 * 100vh);
+
+    --font-size: calc(8 * var(--pixel));
+    --font-size-small: calc(6 * var(--pixel));
+
+    --animation-bar-duration: 5s;
+    --animation-bar-delay: 0s;
+
+    --animation-content-duration: 1.5s;
+    --animation-content-delay: calc(var(--animation-bar-duration) / 2);
+
+    --animation-loading-duration: 1.5s;
+    --animation-loading-delay: calc(calc(var(--animation-content-delay)));
+
+    --player-width: calc(192 * var(--pixel));
+    --player-padding: calc(2 * var(--pixel)) calc(8 * var(--pixel)) calc(2 * var(--pixel)) calc(0 * var(--pixel));
+    --player-background: rgba(255, 255, 255, 0.05);
+    --player-background-supporter: #f5ecff;
+    --player-avatar-height: calc(28 * var(--pixel));
+    --player-avatar-margin: calc(8 * var(--pixel));
+
+    --logo-width: calc(96 * var(--pixel));
+    --logo-alt-height: calc(20 * var(--pixel));
+    --logo-alt-margin: calc(3 * var(--pixel));
+
+    --loading-width: calc(128 * var(--pixel));
+    --loading-padding: calc(4 * var(--pixel)) calc(8 * var(--pixel));
+    --loading-margin: calc(4 * var(--pixel));
+    --loading-bar-height: calc(6 * var(--pixel));
+
+    --color-primary: #f5ecff;
+}
+
+html, body {
+    color: #f1f1f1;
+    font-family: 'K2D', sans-serif !important;
+    font-size: var(--font-size);
+}
+
+.main {
+    display: block;
+    position: absolute;
+    text-align: center;
+    right: 2%;
+    top: 2%;
+    opacity: 0;
+    animation: fade-in;
+    animation-duration: var(--animation-loading-duration);
+    animation-delay: var(--animation-loading-delay);
+    animation-fill-mode: forwards;
+}
+  
+.main > p {
+    background-color: #8787878c;
+    padding: .6vw .6vw;
+    color: white;
+    font-size: 1.5vh;
+    font-family: 'K2D', sans-serif !important;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes brightness-fade {
+    0% {
+        filter: brightness(0%);
+    }
+    100% {
+        filter: brightness(100%);
+    }
+}
+
+#bg-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: brightness(0%);
+    animation: brightness-fade;
+    animation-duration: var(--animation-content-duration);
+    animation-fill-mode: forwards;
+}
+
+.overlay {
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    color: #f1f1f1;
+    width: 100%;
+    height: 100%;
+}
+
+.status {
+    opacity: 0;
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    bottom: 20px;
+    position: inherit;
+    animation: fade-in;
+    animation-duration: var(--animation-loading-duration);
+    animation-delay: var(--animation-loading-delay);
+    animation-fill-mode: forwards;
+}
+
+.progress {
+    transition: width .25s;
+    height: var(--loading-bar-height);
+    background-color: #f5ecff;
+    width: 100%;
+    box-shadow: 0 5px 8px 0px var(--color-primary);
+    bottom: 1px;
+    position: absolute;
+    border-radius: unset !important;
+}

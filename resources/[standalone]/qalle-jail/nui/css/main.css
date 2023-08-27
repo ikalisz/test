@@ -1,0 +1,32 @@
+body {
+  user-select: none;
+  overflow: hidden;
+}
+
+.ana {
+  display: none;
+  position: absolute;
+  top: 0vh;
+  right: 23vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.resim {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  padding: 20px 20px;
+  width: 5vh;
+  color: white;
+  font-size: 65px;
+  font-weight: normal;
+  font-family: "Montserrat";
+  margin-left: 12vh;
+}

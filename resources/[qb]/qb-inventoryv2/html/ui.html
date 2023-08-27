@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <script src="https://kit.fontawesome.com/9d1010a476.js" crossorigin="anonymous"></script>
+    </head>
+    <body style="background-color: rgba(0,0,0,0); font-family: 'Roboto', sans-serif !important;">
+        <div id="qbus-inventory">
+            <div class="GiveItembox">
+                <div class="GiveItemPlayers"></div>
+            </div>
+            <div class="inv-container" style="width: 100%;">
+                <div class="player-inventory" style="width: 32%;margin-left: 9%;">
+                    <div class="player-inv-info">
+                        <span id="player-inv-label">Player Inventory</span><br><br>
+                        <span id="player-inv-weight"></span>
+                        <img style="margin-left: 27.7%;
+                        width:0.9%;
+                        font-size: 15px;
+                        position: fixed;
+                        top: 22.4%;
+                        display:left"src="images/weight.png">
+                        <div id="weight-bar">
+                            <div class="player-weight"></div>
+                        </div>
+                    </div>
+                    <div class="items-slots item-slots-player" data-inventory="player">
+                    </div>
+                </div>
+
+                <div class="inv-options">
+                    <div class="inv-option-bg">
+                        <input type="number" id="item-amount" class="inv-option-item" min=0 value="0" onClick="this.select();" oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');"></input>
+                        <div class="inv-option-item" id="reset">RESET</div>
+                        <div class="inv-option-item" id="item-give"><p>GIVE</p></div>
+                        <div class="inv-option-item" id="craft-btn">Craft</div>
+                         <div class="inv-option-item" id="inv-close">CLOSE</div> 
+                    </div>
+                </div>
+                
+                <div class="bottom-buttons">
+                    <span class="bottom-button help-button" onmouseover="$('.help-menu').fadeIn(300);" onmouseout="$('.help-menu').fadeOut(300);">?</span>
+                </div>
+                
+                
+                <div class="other-inventory" style="width: 40%;margin-right: 9%;">
+                <div class="other-inv-info">
+                    <span id="other-inv-label"></span><br><br>
+                    <span id="other-inv-weight"></span>
+                        <img style="margin-left: 28.3%;
+                        width:0.9%;
+                        font-size: 15px;
+                        position: fixed;
+                        top: 22.4%;
+                        display:left"src="images/weight.png">
+                    <div id="weight-bar">
+                        <div class="other-weight"></div>
+                    </div>
+                    <div class="items-slots item-slots-other" data-inventory="other">
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+            <div class="ply-iteminfo-container">
+                <div class="ply-iteminfo">
+                    <div class="iteminfo-content">
+                        <div class="item-info-title"></div>
+                        <div class="item-info-description"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="inv-background"></div>
+        </div>
+
+        <div class="help-menu">
+            <h3>Inventory :</h3>
+            <p>
+
+                To move a full stack, make sure the area you are moving is free<br />
+                You can set how many items you can choose using the Quantity section..
+                You can reset the amount part with the "RESET" button..
+
+            <h3>Key combination:</h3>
+            <ul>
+                <li>Left Click: Allows you to drag the item in the selected slot.</li>
+                <li>With Double + Left Mouse Click: Allows you to use the item in the selected slot.</li>
+                <li>If you click on the weapon in your inventory, the equipment button will appear on the screen.</li>
+                <li>With Shift + Left Mouse Click: Moves the item in the selected slot to the other inventory.</li>
+                <li>With GIVE: you can give the nearest player as much as the value you entered in the amount part. "0" returns all..</li>
+                <li>With Craft: You can craft new items by blending required items..</li>
+            </p>
+            <h3>Item Durability:</h3>
+            <p>
+                The strength of the item decreases day by day. The decrease status of the item is not related to using or not using it, it decreases with the elapsed time. Green indicates that the item is in good condition, and red indicates that the item is in poor condition.
+            </p>
+        </div>
+
+
+
+
+        <div class="weapon-attachments-container">
+            <div class="weapon-attachments-container-title">Pistol | <span style="font-size: 2vh;">9mm</span></div>
+            <div class="weapon-attachments-container-description">If You're Reading This, You're Eating Good Shit</div>
+            <div class="weapon-attachments-container-details"><span style="font-weight: bold; letter-spacing: .1vh;">Series Number</span><br> 12345678<br><br><span style="font-weight: bold; letter-spacing: .1vh;">Durability</span> <div class="weapon-attachments-container-detail-durability"><div class="weapon-attachments-container-detail-durability-total"></div></div></div>
+            <img src="./attachment_images/weapon_pistol.png" class="weapon-attachments-container-image">
+        
+            <div class="weapon-attachments-title"><span style="font-weight: bold; letter-spacing: .1vh;">Additions</span></div>
+            <div class="weapon-attachments"></div>
+
+            <div class="weapon-attachments-remove"><i class="fas fa-trash"></i></div>
+
+            <div class="weapon-attachments-back"><p>GO BACK</p></div>
+        </div>
+
+        <div class="itemboxes-container"></div>
+        <div class="itembox-container template"></div>
+        <div class="requiredItem-container"></div>
+        <div class="z-hotbar-inventory"></div>
+
+        <script src="js/fontawesome.min.js"></script>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

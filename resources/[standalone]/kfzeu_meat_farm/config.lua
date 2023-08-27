@@ -1,0 +1,1265 @@
+Config = {}
+
+Config.NPCLER = {
+
+    --["Albert Usta"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "balikci",
+        --ModelHash = 0xF041880B,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = { 
+            --x = -1597.92 , y = 5200.85 , z = 4.39, h = 49.35
+        --},
+        --BlipPos= {
+            --type = 317, color = 1, size = 0.9
+        --},
+        --hasBlip = true,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["Paketlenmiş Götür Kolisi"] = { 
+                --reqTime = 2500,
+                --isRandom= false,
+                --itemname="paket_kargo_kolisi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["crab"] = {
+                        --miktar = 1
+                    --},
+                    --["kingcrab"] = {
+                        --miktar = 1
+                    --},
+                    --["midyes"] = {
+                        --miktar = 1
+                    --},
+                    --["midyem"] = {
+                        --miktar = 1
+                    --},
+                    --["midyel"] = {
+                        --miktar = 1
+                    --},
+                    --["kargo_kolisi"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Karagoz)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["karagoz"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Ahtapot)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=5, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["ahtapot"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Karıdes)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["karides"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Kaya Balığı)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["kayabalik"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Levrek)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["levrek"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Morina)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=5, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["morina"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Alabalık)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=5, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["talabalik"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Ringa)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=5, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["ringa"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Morina)"] = { 
+                --reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=5, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["morina"] = {
+                        --miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Uskumru)"] = { 
+               -- reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["uskumru"] = {
+                       -- miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Somon)"] = { 
+               -- reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["somon"] = {
+                        --miktar = 1
+                    --},
+              --  } 
+            --},
+            --["Balık Eti(Lüfer)"] = { 
+              --  reqTime = 2000,
+               -- isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                  --  ["lufer"] = {
+                      --  miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Tranca)"] = { 
+              --  reqTime = 2000,
+               --isRandom= false,
+               -- itemname="baliketi", 
+               -- price=200, 
+               -- give=5, 
+               -- action="craft", 
+               -- anim = "base",
+               -- animDict = "amb@world_human_bum_standing@depressed@base",
+               -- neededitems = {
+                  --  ["tranca"] = {
+                     --   miktar = 1
+                    --},
+                --} 
+            --},
+            --["Balık Eti(Sazan)"] = { 
+               -- reqTime = 2000,
+                --isRandom= false,
+                --itemname="baliketi", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["tsazan"] = {
+                       -- miktar = 1
+                    --},
+                --} 
+            --},
+        --}
+    --},
+    --["Axel"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "cemil_iplikci",
+        --ModelHash = 0xA5720781,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = 465.14, y = -735.8 , z = 27.36, h = 86.44
+        --},
+        --BlipPos= {
+            --type = 366, color = 9, size = 0.7, blipName="Kumaş İşleme"
+        --},
+        --hasBlip = true,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["Kumaş İşleme"] = { 
+                --reqTime = 2500,
+                --isRandom=false,
+                --itemname="clothe", 
+                --price=180, 
+                --give=2, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["fabric"] = {
+                        --miktar = 1
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    --["Scarlett Karayünsever"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "ayse_karayunver",
+        --ModelHash = 0x61C81C85,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = 714.11, y = -966.78 , z = 30.4, h = 354.0
+        --},
+        --BlipPos= {
+            --x = 2973.81 , y = 3479.93 , z = 71.44, type = 366, color = 9, size = 0.7, blipName="Yün İşleme"
+        --},
+        --hasBlip = true,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["Yün İşleme"] = { 
+                --reqTime = 2500,
+                --isRandom=false,
+                --itemname="fabric", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["wool"] = {
+                        --miktar = 2
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    -- ["DUR YOLCU"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "dur_yolcu",
+    --     ModelHash = 0xDE2937F3,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -3.34, y = -1267.49 , z = 29.4, h = 90.37
+    --     },
+    --     BlipPos= {
+    --         type = 486, color = 1, size = 0.7, blipName="Domates İşleme"
+    --     },
+    --     hasBlip = false,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {}
+    -- },
+    -- ["Tavuk Jakob"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "tavuk_necmi",
+    --     ModelHash = 0x4163A158,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -87.87, y = 6235.04 , z = 31.09, h = 292.26
+    --     },
+    --     BlipPos= {
+    --         type = 233, color = 33, size = 0.7, blipName="Tavuk İşleme"
+    --     },
+    --     hasBlip = true,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Tavuk İşleme"] = { 
+    --             reqTime = 2500,
+    --             isRandom=false,
+    --             itemname="slaughtered_chicken", 
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["alive_chicken"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         }
+    --     }
+    -- },
+    -- ["Tavuk Olivia"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "tavuk_ayten",
+    --     ModelHash = 0x69F46BF3,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -98.59, y = 6204.85 , z = 31.03, h = 44.78
+    --     },
+    --     BlipPos= {
+    --         type = 233, color = 33, size = 0.7, blipName="Tavuk Paketleme"
+    --     },
+    --     hasBlip = true,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Tavuk Paketleme"] = { 
+    --             reqTime = 2500,
+    --             isRandom=false,
+    --             itemname="packaged_chicken", 
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["slaughtered_chicken"] = {
+    --                     miktar = 1
+    --                 }
+
+    --             } 
+    --         }
+    --     }
+    -- },
+    ["Andrew"] = {
+        HasNpc = true,
+        policeBildirim = false,
+        MenuUnique = "Merhaba",
+        ModelHash = 0xCE9113A9,
+        illegal = false,
+        legal = false,
+        NpcPos = {
+            x = -554.72, y = 5328.61 , z = 73.6, h = 158.82
+        },
+        BlipPos= {
+            type = 527, color = 31, size = 0.5, blipName="Wood Processing"
+        },
+        hasBlip = true,
+        isShop = false,
+        isProc = true,
+        items = {
+            ["Wood Processing"] = { 
+                reqTime = 10000,
+                isRandom=false,
+                itemname="cutted_wood", 
+                price=50, 
+                give=10, 
+                action="craft", 
+                anim = "base",
+                animDict = "amb@world_human_bum_standing@depressed@base",
+                neededitems = {
+                    ["odun"] = {
+                        miktar = 1
+                    }
+                } 
+            }
+        }
+    },
+    -- ["Oduncu Conroy"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "oduncu_conroy",
+    --     ModelHash = 0xF6157D8F,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -489.84, y = 5287.28 , z = 80.61, h = 71.68
+    --     },
+    --     BlipPos= {
+    --         type = 527, color = 31, size = 0.5, blipName="Talaş Paketleme"
+    --     },
+    --     hasBlip = true,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Talaş Paketleme"] = { 
+    --             reqTime = 2500,
+    --             isRandom=false,
+    --             itemname="packaged_plank", 
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["cutted_wood"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         }
+    --     }
+    -- },
+    --["Petrol Benedict"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "petrol_akif",
+        --ModelHash = 0xF6157D8F,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = 2744.14, y = 1485.4 , z = 30.79, h = 255.09
+        --},
+        --BlipPos= {
+            --type = 436, color = 60, size = 0.7, blipName="Petrol İşleme"
+        --},
+        --hasBlip = true,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["Petrol İşleme"] = { 
+                --reqTime = 2500,
+                --isRandom=false,
+                --itemname="petrol_raffin", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["petrol"] = {
+                        --miktar = 1
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    --["Petrol Hector"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "petrol_osman",
+        --ModelHash = 0x4086BD77,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = 1708.71, y = -1609.99 , z = 112.81, h = 192.19
+        --},
+        --BlipPos= {
+            --type = 436, color = 60, size = 0.7, blipName="Benzin Fabrikası"
+        --},
+        --hasBlip = true,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["Benzin Fabrikası"] = { 
+                --reqTime = 2500,
+                --isRandom=false,
+                --itemname="essence", 
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["petrol_raffin"] = {
+                        --miktar = 1
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    -- ["Tas Jack"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "tas_ismail",
+    --     ModelHash = 0xD7DA9E99,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = 287.37, y = 2872.29 , z = 43.64, h = 207.37
+    --     },
+    --     BlipPos= {
+    --         type = 501, color = 39, size = 0.7, blipName="Taş İşleme"
+    --     },
+    --     hasBlip = true,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Taş İşleme"] = { 
+    --             reqTime = 2000,
+    --             isRandom = true,
+    --             giveItemList = {"copper", "iron", "gold"},
+    --             price=200, 
+    --             give={["copper"]=5, ["iron"]=5, ["gold"]=1}, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["stone"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         }
+    --     }
+    -- },
+    ["Winemaker Tahir"] = {
+        HasNpc = true,
+        policeBildirim = false,
+        MenuUnique = "sarapci_kenan",
+        ModelHash = 0x7D03E617,
+        isIllegal = false,
+        NpcPos = {
+            x = -1928.690185546875, y = 2059.7578125, z = 140.8373260498047, w = 348.8855285644531
+        },
+        BlipPos= {
+            type = 57, color = 61, size = 0.5, blipName="Grape Boxing"
+        },
+        hasBlip = false,
+        isShop = false,
+        isProc = true,
+        items = {
+            ["Grape Box"] = {
+                reqTime = 20000,
+                isRandom=false,
+                itemname="uzumkasa",
+                icon = "fas fa-box-open",
+                price=nil,
+                give=1,
+                action="craft",
+                anim = "base",
+                animDict = "amb@world_human_bum_standing@depressed@base",
+                neededitems = {
+                    ["uzum"] = {
+                        miktar = 10
+                    }
+                }
+            }
+        }
+    },
+    -- ["Tas Josef"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "tas_abuzer",
+    --     ModelHash = 0xC5FEFADE,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = 1111.2, y = -2005.52 , z = 30.9, h = 98.5
+    --     },
+    --     BlipPos= {
+    --         type = 501, color = 39, size = 0.7, blipName="Metal Fabrikası"
+    --     },
+    --     hasBlip = true,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Bakır İşleme"] = { 
+    --             reqTime = 3000,
+    --             isRandom = false,
+    --             itemname = "islenmis_bakir",
+    --             price=200, 
+    --             give=3, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["copper"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --         ["Demir İşleme"] = { 
+    --             reqTime = 3000,
+    --             isRandom = false,
+    --             itemname = "islenmis_demir",
+    --             price=200, 
+    --             give=2, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["iron"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --         ["Altın İşleme"] = { 
+    --             reqTime = 3000,
+    --             isRandom = false,
+    --             itemname = "islenmis_altin",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["gold"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --         ["Kum Eritme"] = { 
+    --             reqTime = 3000,
+    --             isRandom = false,
+    --             itemname = "cam",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["kum"] = {
+    --                     miktar = 2
+    --                 }
+    --             } 
+    --         },
+    --         ["Hurda Bakır Eritme"] = { 
+    --             reqTime = 3000,
+    --             isRandom = false,
+    --             itemname = "islenmis_bakir",
+    --             price=200, 
+    --             give=15, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["hurda_bakir"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         },
+    --         ["Hurda Demir Eritme"] = { 
+    --             reqTime = 3000,
+    --             isRandom = false,
+    --             itemname = "islenmis_demir",
+    --             price=200, 
+    --             give=10, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["hurda_demir"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         },
+    --         ["Altın Parçası Eritme"] = { 
+    --             reqTime = 3000,
+    --             isRandom = false,
+    --             itemname = "islenmis_altin",
+    --             price=200, 
+    --             give=5, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["hurda_altin"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         }
+    --     }
+    -- },
+    --["Scuba Richard"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "dalgic_recep",
+        --ModelHash = 0x0B4A6862,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = -1613.15, y = 5261.91 , z = 3.97, h = 207.8
+        --},
+        --BlipPos= {
+            --type = 197, color = 12, size = 0.5, blipName="Dalış Kulübü"
+        --},
+        --hasBlip = true,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["Su Altı Regülatorü"] = { 
+                --reqTime = 5000,
+                --isRandom = false,
+                --itemname="su_alti",
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["yosun"] = {
+                        --miktar = 10
+                    --},
+                    --["mercan"] = {
+                        --miktar = 10
+                    --},
+                    --["o_tup"] = {
+                        --miktar = 1
+                    --},
+                    --["plastik"] = {
+                        --miktar = 10
+                    --}
+                --} 
+            --},
+            --["Dalış Ekipmanı"] = { 
+                --reqTime = 5000,
+                --isRandom = false,
+                --itemname="su_alti2",
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["yosun"] = {
+                        --miktar = 30
+                    --},
+                    --["mercan"] = {
+                        --miktar = 30
+                    --},
+                    --["balon_baligi"] = {
+                        --miktar = 10
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    --["Hindu William"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "hindu_samet",
+        --ModelHash = 0xDDCAAA2C,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = 84.616577148438, y = 4563.6489257812, z = 90.502792358398, h = 217.23
+        --},
+        --BlipPos= {
+            --type = 233, color = 12, size = 0.7, blipName="Hindu William"
+        --},
+        --hasBlip = false,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["???"] = { 
+                --reqTime = 4000,
+                --isRandom = false,
+                --itemname="turtle_soup",
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["turtle"] = {
+                        --miktar = 1
+                    --},
+                    --["water"] = {
+                        --miktar = 2
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    --["Tüpçü David"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "tupcu_riza",
+        --ModelHash = 0xB1B196B2,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = 149.16, y = -2205.46, z = 4.69, h = 7.02
+        --},
+        --BlipPos= {
+            --type = 233, color = 12, size = 0.7, blipName="Tüpçü David"
+        --},
+        --hasBlip = false,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["???"] = { 
+                --reqTime = 3000,
+                --isRandom = false,
+                --itemname="bos_tup",
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["islenmis_demir"] = {
+                        --miktar = 10
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    --["Christopher"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "christopher",
+        --ModelHash = 0xC9E5F56B,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = -1107.6088867188, y = -1643.0623779297, z = 4.6405363082886, h = 300.02
+        --},
+        --BlipPos= {
+            --type = 233, color = 12, size = 0.7, blipName="Christopher"
+        --},
+        --hasBlip = false,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["???"] = { 
+                --reqTime = 5000,
+                --isRandom = false,
+                --itemname="o_tup",
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["bos_tup"] = {
+                        --miktar = 1
+                    --},
+                    --["balon_baligi"] = {
+                        --miktar = 5
+                   --}
+                --} 
+            --}
+        --}
+    --},
+    --["Daniel"] = {
+        --HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "daniel",
+        --ModelHash = 0xB1B196B2,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = 724.87, y = 4193.44, z = 40.71, h = 265.9
+        --},
+        --BlipPos= {
+            --type = 233, color = 12, size = 0.7, blipName="Daniel"
+        --},
+        --hasBlip = false,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["???"] = { 
+                --reqTime = 3000,
+                --isRandom = false,
+                --itemname="tamirkiti",
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["islenmis_demir"] = {
+                        --miktar = 5
+                    --},
+                    --["packaged_plank"] = {
+                        --miktar = 5
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    -- ["Ayten"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "doga_ana",
+    --     ModelHash = 0x69F46BF3,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -239.97, y = -229.05, z = 36.65, h = 100.63
+    --     },
+    --     BlipPos= {
+    --         type = 233, color = 12, size = 0.7, blipName="Geri Dönüşüm Merkezi"
+    --     },
+    --     hasBlip = true,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Geri Dönüşüm Ürünü Ver"] = { 
+    --             reqTime = 1500,
+    --             isRandom = false,
+    --             itemname="yemek_jetonu",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["recycle_item"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --         ["Paslı Konserve Ver"] = { 
+    --             reqTime = 1500,
+    --             isRandom = false,
+    --             itemname="yemek_jetonu",
+    --             price=200, 
+    --             give=2, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["pkonserve"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --         ["Kirli Şişe Ver"] = { 
+    --             reqTime = 1500,
+    --             isRandom = false,
+    --             itemname="yemek_jetonu",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["psise"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --         ["Plastik Şişe Ver"] = { 
+    --             reqTime = 2500,
+    --             isRandom = false,
+    --             itemname="yemek_jetonu",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["plastik_sise"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --         ["Cam Şişe Ver"] = { 
+    --             reqTime = 1500,
+    --             isRandom = false,
+    --             itemname="yemek_jetonu",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["sise"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         }
+    --     }
+    -- },
+    --["Steven"] = {
+       -- HasNpc = true,
+        --policeBildirim = false,
+        --MenuUnique = "yemci_steven",
+        --ModelHash = 0x0F977CEB,
+        --illegal = false,
+        --legal = false,
+        --NpcPos = {
+            --x = -2651.4821777344, y = 2703.3190917969, z = 3.2738468647003, h = 262.73
+        --},
+        --BlipPos= {
+            --type = 233, color = 12, size = 0.7, blipName="Steven"
+        --},
+        --hasBlip = false,
+        --isShop = false,
+        --isProc = true,
+        --items = {
+            --["Kaplumbağa Yemi"] = { 
+                --reqTime = 2000,
+                --isRandom = false,
+                --itemname="turtlebait",
+                --price=200, 
+                --give=1, 
+                --action="craft", 
+                --anim = "base",
+                --animDict = "amb@world_human_bum_standing@depressed@base",
+                --neededitems = {
+                    --["fishbait"] = {
+                        --miktar = 2
+                    --},
+                    --["hamur"] = {
+                        --miktar = 1
+                    --}
+                --} 
+            --}
+        --}
+    --},
+    -- ["Silah Tezgahı"] = {
+    --     HasNpc = false,
+    --     MenuUnique = "dominic_buritto",
+    --     ModelHash = 0x188099A9,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -459.65, y = -2760.99, z = 5.09, h = 326.69
+    --     },
+    --     BlipPos= {
+    --         type = 567, color = 12, size = 0.4, blipName="Silah Tezgahı"
+    --     },
+    --     hasBlip = false,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Molotov Üret"] = { 
+    --             reqTime = 5000,
+    --             isRandom = false,
+    --             itemname="WEAPON_MOLOTOV",
+    --             price=750, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["sise"] = {
+    --                     miktar = 1
+    --                 },
+    --                 ["fabric"] = {
+    --                     miktar = 3
+    --                 },
+    --                 ["vodka"] = {
+    --                     miktar = 5
+    --                 }
+    --             } 
+    --         },
+    --     }
+    -- },
+	-- ["Yemekci Nesih Abe"] = {
+    --     HasNpc = true,
+    --     policeBildirim = false,
+    --     MenuUnique = "yemekci_fred",
+    --     ModelHash = 0x06DD569F,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -1198.13, y =  -886.17, z = 13.9999, h = 300.00    -- x = 5009.15, y = -5783.87 , z = 17.83, h = 213.3
+    --     },
+    --     BlipPos= {
+    --         type = 683, color = 4, size = 0.6, blipName="Yemekci Fred"
+    --     },
+    --     hasBlip = false,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Burger"] = { 
+    --             reqTime = 2000,
+    --             isRandom=false,
+    --             itemname="burgerm", 
+    --             price=75, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["yemek_jetonu"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         },
+    --         ["Atom"] = { 
+    --             reqTime = 2000,
+    --             isRandom=false,
+    --             itemname="atom", 
+    --             price=75, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["yemek_jetonu"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         },
+    --     }
+    -- },
+    -- ["Hurdacı"] = {
+    --     HasNpc = true,
+    --     ModelHash = 0xB3F3EE34,
+    --     MenuUnique = "silah_parcala",
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = -591.64, y = -1789.24, z = 23.05, h = 320.37
+    --     },
+    --     BlipPos= {
+    --        type = 233, color = 12, size = 0.7, blipName="Hurdacı"
+    --     },
+    --     hasBlip = false,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Hurdaları kalıba çevir"] = { 
+    --             reqTime = 3000,
+    --             isRandom = true,
+    --             giveItemList = {"dokumkalip"},
+    --             price=10, 
+    --             give={["dokumkalip"]=1}, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["islenmis_demir"] = {
+    --                     miktar = 10
+    --                 }
+    --             } 
+    --         },
+    --     }
+    -- },
+    -- ["Silah Kalıp Tezgahı"] = {
+    --     HasNpc = false,
+    --     MenuUnique = "dominic_buritto",
+    --     ModelHash = 0x188099A9,
+    --     illegal = false,
+    --     legal = false,
+    --     NpcPos = {
+    --         x = 2781.45, y = 1400.42, z = 23.64, h = 326.69
+    --     },
+    --     BlipPos= {
+    --         type = 567, color = 12, size = 0.4, blipName="Silah Kalıp Tezgahı"
+    --     },
+    --     hasBlip = false,
+    --     isShop = false,
+    --     isProc = true,
+    --     items = {
+    --         ["Heavy Kalıp Üret"] = { 
+    --             reqTime = 5000,
+    --             isRandom = false,
+    --             itemname="heavypistolkalip",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["iron"] = {
+    --                     miktar = 10
+    --                 },
+    --                 ["dokumkalip"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         },
+    --         ["Skarpion Kalıp Üret 2"] = { 
+    --             reqTime = 5000,
+    --             isRandom = false,
+    --             itemname="skarpionkalip",
+    --             price=200, 
+    --             give=1, 
+    --             action="craft", 
+    --             anim = "base",
+    --             animDict = "amb@world_human_bum_standing@depressed@base",
+    --             neededitems = {
+    --                 ["iron"] = {
+    --                     miktar = 10
+    --                 },
+    --                 ["clip"] = {
+    --                     miktar = 1
+    --                 },
+    --                 ["dokumkalip"] = {
+    --                     miktar = 1
+    --                 }
+    --             } 
+    --         }
+    --     }
+    -- },
+}       

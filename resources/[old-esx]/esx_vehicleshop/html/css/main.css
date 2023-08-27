@@ -1,0 +1,251 @@
+body {
+    /* background: url("https://i.pinimg.com/originals/c2/24/50/c2245051be2e36408757aa1a4ff1dcf1.jpg");  */
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+    user-select: none;
+    font-weight: bolder;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.main {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.car-slider-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px -50px;
+}
+
+.displayNone {
+    display: none;
+}
+
+.rightClickNone {
+    opacity: 1.0;
+}
+
+#close {
+    font-size: 50px;
+    position: absolute !important;
+    color: #aa0000;
+    right: 60px;
+    top:20px;
+    text-shadow: 10px 10px 10px rgba(1,1,1,1);
+}
+
+.car-slider-content {
+    display: flex;
+    flex-wrap: wrap;
+    /* display: flex !important; */
+    background: #1a1b20;
+    background-image: url('img/adder.png');
+    margin: 0 5px;
+    height: 120px;
+    width: 200px;
+    border-radius: 5px;
+    outline: 0;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.ra1dercolor {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    border-radius: 5px;
+    background: rgba(200, 30, 30, 0.116);
+    z-index: 1;
+    padding: 10px;
+}
+
+
+.ra1derbaslik, .ra1derstok{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    z-index: 2;
+}
+
+.ra1derstok{
+    align-items: flex-end;
+}
+
+.slick-active, .slick-center {
+    padding: 25px;
+}
+
+.slick-active .ra1dercolor, .slick-center .ra1dercolor {
+    padding: 25px;
+}
+
+.top-menu {
+    left:0;
+    right:0;
+    margin:0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    text-shadow: 1px 1px 1px rgba(1,1,1,1);
+}
+
+.top-menu-button {
+    transition: color 0.5s, font-size 0.5s;
+    padding-right: 25px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+}
+
+.topMenuFontSize {
+    font-size: 30px;
+}
+
+/* Araç Bilgi Kutusu */
+.car-info {
+    width: 100%;
+    color: #fff;
+    align-self: flex-end;
+    margin: 0 150px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    text-shadow: 1px 1px 1px rgba(1,1,1,1);
+}
+
+.car-money {
+    color: #00bb7d;
+    font-size: 35px;
+    text-align: left;
+    align-self: flex-end;
+}
+
+.car-info-box {
+    align-self: flex-end;
+    width: 200px;
+    margin-top: 15px;
+}
+
+.box {
+    margin-bottom: 10px;
+}
+
+.box-text {
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.box-bg {
+    background: rgb(255 255 255 / 60%);
+    width: 100%;
+    height: 20px;
+    border-radius: 50vh;
+    position: relative;
+}
+
+.box-bar {
+    transition: width 0.5s;
+    height: 100%;
+    position: absolute;
+    background: #fff;
+    right: 0;
+    border-radius: 50vh;
+    box-shadow: 0px 1px 1px 0px rgba(50, 50, 50, 0.75);
+
+}
+
+#box-speed-bar {
+    width: 50%;
+}
+
+#box-handling-bar {
+    width: 50%;
+}
+
+#box-braking-bar {
+    width: 50%;
+}
+
+#box-accel-bar {
+    width: 50%;
+}
+
+.car-buy-button, .car-test-button {
+    color: #00b679;
+    border: 2px solid #ffffff85;
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 50vh;
+    font-size: 15px;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+/* Buy Menu */
+.buy-menu, .test-menu {
+    position: absolute;
+    background: #fff;
+    padding: 10px;
+    margin: auto auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.5);
+}
+
+.buy-menu-money, .test-menu-money {
+    font-size: 20px;
+}
+
+.buy-menu-button {
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 25px;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.buy-menu-button:hover {
+    background: #333;
+}
+
+/* notif */
+#notif {
+    background-color: #008f6b;
+    padding: 10px 20px;
+    display: flex;
+    position: absolute;
+    top: 110px;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    left: -20%;
+}

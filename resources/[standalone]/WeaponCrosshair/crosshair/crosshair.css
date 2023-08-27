@@ -1,0 +1,62 @@
+#container {
+
+    display: none;
+
+    position: absolute;
+
+    left: 50.3%;
+
+    top: 50.55%;
+
+    transform: translate(-50%, -50%);
+
+    height: 1.5%;
+
+    width: 0.75%;
+
+    /* width: 100vw; 
+
+    height: 100vh; 
+
+    position: fixed;
+
+    top: 0; 
+
+    left: 0; 
+
+    display: flex; 
+
+    align-items: center; 
+
+    justify-content: center; */
+
+}
+
+
+
+#circle {
+
+    width: 4px; 
+
+    height: 4px;
+
+    border: 1px solid black; 
+
+    border-radius: 100%;
+
+    background-color: white;
+    
+
+    /* display: none; 
+
+    border-radius: 100%; 
+
+    border: 2px solid black; 
+
+    width: 4px; 
+
+    height: 4px; 
+
+    background-color: white; */
+
+}

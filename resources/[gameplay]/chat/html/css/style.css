@@ -1,0 +1,202 @@
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+.color-0{color: #ffffff;}
+.color-1{color: #ff4444;}
+.color-2{color: #99cc00;}
+.color-3{color: #ffbb33;}
+.color-4{color: #0099cc;}
+.color-5{color: #33b5e5;}
+.color-6{color: #aa66cc;}
+.color-8{color: #cc0000;}
+.color-9{color: #cc0068;}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.no-grow {
+  flex-grow: 0;
+}
+
+em {
+  font-style: normal;
+}
+
+#app {
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  background-color: transparent;
+}
+
+.chat-window {
+  position: absolute;
+  top: 2%;
+  left: 45px;
+  width: 38%;
+  height: 530px;
+  max-width: 550px;
+  background-color: rgba(255, 16, 16, 0);
+  -webkit-animation-duration: 2s;
+}
+
+.chat-messages {
+  max-height: 140%;
+  font-size: 1.4rem;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.chat-input {
+  font-size: 1.2rem;
+  position: absolute;
+  top: 360px;
+  left: 15px;
+  width: 20%;
+  margin-left:2%;
+  box-sizing: border-box;
+}
+
+.prefix { 
+  font-size: 1.8vh;
+  position: absolute;
+  margin-top: -0.55%;
+  margin-left: 1.2%;
+  left: 0.208%;
+}
+
+textarea {
+  font-size: 1.05rem;
+  display: block;
+  box-sizing: border-box;
+  padding: 3.5px;
+  padding-left: 5px;
+  color: white;
+  background-color: rgba(16, 44, 71, 0.514);
+  width: 100%;
+  border-width: 0;
+  height: 28px;
+  overflow: hidden;
+}
+
+.suggestions {
+  list-style-type: none;
+  padding: 2px;
+  padding-left: 27px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+  color: white;
+  background-color: rgba(44, 62, 80, 0.614);
+  border-radius: 4px 4px 4px 4px;
+  width: 100%;
+}
+
+.help {
+  margin-top: -10px;
+  color: #b0bbbd;
+}
+
+.disabled {
+  margin-top: -10px;
+  color: #b0bbbd;
+}
+
+.suggestion {
+  margin-bottom: 0.5px;
+}
+
+.chat-message {
+  display: inline-block !important;
+  padding: 0.55vw;
+  margin: 0.1vw;
+  border-radius: 5px;
+  border-bottom: 3px solid;
+  border-right: 2px solid;
+  background-color: rgba(47, 114, 181, 0.9);
+  border-color: rgba(35, 83, 132, 0.9);
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+.chat-message.advert {
+  background-color: rgba(47, 92, 115, 0.8);
+  border-color: rgba(29, 57, 70, 0.8);
+
+}
+
+.warning {
+  background-color: rgba(255, 136, 0, 0.8);
+  border-color: rgba(161, 86, 1, 0.8);
+
+}
+
+.normal {
+  background-color: rgba(47, 114, 181, 0.9);
+  border-color: rgba(28, 70, 112, 0.9);
+
+}
+
+.error {
+  background-color: rgba(191, 36, 36, 0.9);
+  border-color: rgba(138, 25, 25, 0.9);
+
+}
+
+.me {
+  /* color: #111; */
+  background-color: rgba(125, 180, 102, 0.9);
+  border-color: rgba(73, 106, 59, 0.9);
+
+  font-weight: bold;
+}
+
+.do {
+  /* color: #111; */
+
+  background-color: rgba(148, 94, 160, 0.9);
+  border-color: rgba(117, 72, 114, 0.9);
+  font-weight: bold;
+}
+
+.chat-message.system {
+  background-color: rgb(67, 57, 111);
+  border-color: rgb(39, 33, 65);
+
+}
+
+.chat-message.emergency {
+  background-color: rgba(224, 50, 50, 0.8);
+  border-color: rgba(144, 32, 32, 0.8);
+
+}
+
+.chat-message.nonemergency {
+  background-color: rgba(112, 25, 25, 0.8);
+  border-color: rgba(91, 20, 20, 0.8);
+
+}
+
+.chat-message.report {
+  background-color: rgba(86, 173, 10, 0.8);
+  border-color: rgba(60, 120, 7, 0.8);
+
+}
+
+.chat-message.np311 {
+  background-color: rgba(240, 182, 75, 0.8);
+  border-color: rgba(166, 126, 52, 0.8);
+}
+
+.chat-message.np911 {
+  background-color: rgba(143, 26, 26, 0.8);
+  border-color: rgba(93, 18, 18, 0.8);
+}

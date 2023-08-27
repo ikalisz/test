@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=Mukta:wght@300&display=swap%27');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+* {
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    user-select: none;
+    font-size: 1.4vh;
+    text-transform: none;
+    font-style: normal;
+    font-weight: 450;
+    /* font-family: 'Mukta', sans-serif; */
+    text-shadow: 0.050vh 0.050vh 0.050vh #00000049;
+    color: white;
+    transition: all 0.4s ease-in-out;
+    user-select: none !important;
+}
+
+
+
+:root {
+    --dark-blue: #27405a;
+    --white: #ffffff;
+    --black: #000000;
+    --light-gray: #999999;
+
+    --primary: #1d2133;
+    --secondary: #555d80d7;
+    --tertiary: #c95d69;
+    --hover: #3c4880;
+}
+
+
+body {
+    position: relative;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.blink_me {
+    -webkit-animation: blinker 1.5s linear infinite;
+    animation: blinker 1.5s linear infinite
+}
+
+@-webkit-keyframes blinker {
+    50% {
+        background-color: rgba(255, 0, 0, 0.7);
+        border-right: 5px solid rgba(255, 0, 0, 0.7);
+    }
+}
+
+@keyframes blinker {
+    50% {
+        background-color: rgba(255, 0, 0, 0.7);
+        border-right: 5px solid rgba(255, 0, 0, 0.7);
+    }
+}
+
+.input {
+    display: none;
+    background: var(--dark-blue);
+    border-radius: 10px;
+    border: 2px solid var(--light-gray) !important;
+    width: 100%;
+    height: 0px;
+    font-size: 16px;
+    padding: 8px;
+    box-sizing: border-box;
+    line-height: 1.25rem;
+    transition: all 0.25s;
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.input[type=text] {
+    border: none;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #333333 !important;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+.notification-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 32px;
+    width: 384px;
+    border-radius: 5px;
+}
+
+.app-container {
+    position: absolute;
+    margin: 16px -110% 16px 16px;
+    padding: 16px;
+    right: 0;
+    top: 0;
+    width: 384px;
+}
+
+.notification-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    background: var(--dark-blue);
+    border-right: 5px solid #30465f; 
+}
+
+.notification-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.notification-header div span {
+    margin-right: 3px;
+    font-weight: 700;
+    color: white;
+}
+
+.notification-header span:first-child {
+    font-weight: normal;
+    color: black;
+    background: #a7ef85;
+    font-weight: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 20px; 
+}
+
+.notification-header #data_code_span {
+    font-weight: normal;
+    border-radius: 20px;
+    font-weight: 5px;
+    color: black;
+    background: #f4ab7b;
+    padding-left: 6px;
+    padding-right: 6px; 
+}
+
+.notification-details {
+    padding: 4px 8px;
+}
+
+.notificaiton-details span {
+    word-break: break-all;
+}
+
+.notification-footer {
+    display: flex;  
+    display: none; 
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.notification-footer .title {
+    margin: 4px 8px;
+    font-weight: 700;
+}
+
+.active-units {
+    display: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.active-units span {
+    flex: 1 0 20%;
+    width: 100%;
+    padding: 4px;
+    margin: 4px;
+    margin-right: 2px;
+    text-align: center;
+    background: var(--dark-blue);
+    border: 4px solid var(--primary);
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+.app-header {
+    background: var(--dark-blue);
+    border-right: 4px solid #2e83d5;
+    border-radius: 5px;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-header-field {
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px !important;
+}
+
+.app-header-field i {
+    margin: 0px 2px;
+}
+
+.app-header-field i:last-child {
+    margin: 0px;
+}
+
+.app-header-field span {
+    margin: 0px 2px;
+}
+
+.app-header-field span:first-child {
+    font-weight: 700;
+}
+
+/* This required for flex-column-reverse overflow bug. */
+.outer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    margin: 24px 0px;
+    max-height: 85vh;
+    height: 100%;
+}
+
+.app-contents {
+    /* margin: 24px 0px; */
+    /* max-height: 85vh; */
+    height: 100%;
+    overflow: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+}
+
+.notification-footer-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-field {
+    margin: 6px 6px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.location-field #shortcut {
+    font-weight: 900;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.location-field i {
+    margin-right: 4px;
+}
+
+.shortcut {
+    color: rgba(255, 255, 255, 0.671);
+}
+
+.shortcut:hover {
+    color: var(--hover);
+}
+
+.clock-field {
+    margin: 2px 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.clock-field i {
+    margin-right: 4px;
+}
+
+.vehicle-plate {
+    margin: 2px 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.vehicle-plate i {
+    margin-right: 4px;
+}

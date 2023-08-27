@@ -1,0 +1,2 @@
+['wallet'] 				 	 	 = {['name'] = 'wallet',						['label'] = 'Cüzdan', 					['weight'] = 0, 		['type'] = 'item', 		['image'] = 'wallet.png', 				['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   	['combinable'] = nil,   	['description'] = ""},
+	

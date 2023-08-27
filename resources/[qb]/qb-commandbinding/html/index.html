@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>QB Commandbinding</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="keys-block">
+                <div class="keys-block-header"><p>Shortcut keys</p></div>
+
+                <div class="keys">
+                    <div class="keys-block-binding" data-key="108">
+                        <div class="keys-block-binding-keyprefix">Num 4</div>
+                        <input type="text" class="command" id="command-108" placeholder="KOMUT /e">
+                        <input type="text" class="argument" id="argument-108" placeholder="ARGÜMAN(osuruk)">
+                    </div>
+                    <div class="keys-block-binding" data-key="110">
+                        <div class="keys-block-binding-keyprefix">Num 5</div>
+                        <input type="text" class="command" id="command-110" placeholder="KOMUT /e">
+                        <input type="text" class="argument" id="argument-110" placeholder="ARGÜMAN(otur)">
+                    </div>
+                    <div class="keys-block-binding" data-key="109">
+                        <div class="keys-block-binding-keyprefix">Num 6</div>
+                        <input type="text" class="command" id="command-109" placeholder="KOMUT /e">
+                        <input type="text" class="argument" id="argument-109" placeholder="ARGÜMAN(sigara)">
+                    </div>
+                    <div class="keys-block-binding" data-key="117">
+                        <div class="keys-block-binding-keyprefix">Num 7</div>
+                        <input type="text" class="command" id="command-117" placeholder="KOMUT /e">
+                        <input type="text" class="argument" id="argument-117" placeholder="ARGÜMAN(sigara2)">
+                    </div>
+                    <div class="keys-block-binding" data-key="111">
+                        <div class="keys-block-binding-keyprefix">Num 8</div>
+                        <input type="text" class="command" id="command-111" placeholder="KOMUT /e">
+                        <input type="text" class="argument" id="argument-111" placeholder="ARGÜMAN(elsalla2)">
+                    </div>
+                    <div class="keys-block-binding" data-key="118">
+                        <div class="keys-block-binding-keyprefix">Num 9</div>
+                        <input type="text" class="command" id="command-118" placeholder="KOMUT /e">
+                        <input type="text" class="argument" id="argument-118" placeholder="ARGÜMAN(işe)">
+                    </div>
+                </div>
+
+                <div class="save-bindings"><p>Save</p></div>
+            </div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    list-style: none;
+    /* font-size: 1.4vh; */
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 0; */
+    /* letter-spacing: 0.1px; */
+     font-weight: bolder; 
+    text-decoration: none;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
+    color: #fff;
+    /* user-select: none; */
+    /* white-space: nowrap; */
+    text-shadow: 0.1vh 0.1vh 0.1vh #000000;
+}
+
+
+
+
+.textInfo {
+    position: absolute;
+    top: 50%;
+    float: left;
+    color: white;
+}
+
+#doorlock-container {
+    position: absolute;
+    flex-wrap: wrap;
+    top: 45vh;
+    padding: 0.6em;
+    width: fit-content;
+    color: white;
+    border-radius: 0.3em;
+    left: -15%;
+}
+
+.slide_in {
+    animation: slide-in 1s forwards;
+}
+
+.slide_out {
+    animation: slide-out 1s forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        left: -15%;
+    }
+    100% {
+        left: 0.5%;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        left: 0.5%;
+    }
+    100% {
+        left: -15%;
+    }
+}

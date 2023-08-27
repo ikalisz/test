@@ -1,0 +1,127 @@
+body {
+/*     background: url("../img/bg.png") no-repeat center center fixed; 
+    background-size: cover;  */
+    overflow: hidden; 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+:root {
+    --box-shadow-color: 0px 1px 1px 0px rgba(50, 50, 50, 0.75);
+}
+
+.container {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../font/Gilroy-ExtraBold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Acrom';
+    src: url("../font/Acrom-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'TT Norms';
+    src: url("../font/TTNorms-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("../font/ProximaNova-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'pdown';
+    src: url('../font/pdown.ttf');
+}
+
+
+  
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(48 71 94 / 30%),
+                    0 0 0 3px rgb(48 71 94 / 30%),
+                    0 0 0 8px rgb(48 71 94 / 30%);
+    }
+    100% {
+        box-shadow: 0 0 0 3px rgb(48 71 94 / 30%),
+                    0 0 0 8px rgb(48 71 94 / 30%),
+                    0 0 0 16px rgb(48 71 94 / 0%);
+    }
+}
+
+
+
+/* Money */
+.money-cash {
+    opacity: 0.0;
+    position: absolute;
+    right: 5vw;
+    top: 7vh;
+    font-family: 'pdown';
+    font-weight: 600;
+    font-size: 40px;
+    padding: 4px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+.money-cash p {
+    padding: 5px 0;
+    margin: 0;
+}
+
+.munnie {
+    color: #277418;
+}
+
+#cash, #addCashValue {
+    color: white;
+}
+
+#addCash {
+    opacity: 0.0;
+}
+
+
+/* ipara */
+
+
+.money-ipara {
+    opacity: 0.0;
+    position: absolute;
+    right: 5vw;
+    top: 4vh;
+    font-family: 'pdown';
+    font-weight: 400;
+    font-size: 40px;
+    padding: 4px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+
+.money-ipara p {
+    padding: 12px 0;
+    margin: 0;
+}
+
+/* .munnie2 {
+    color: #ff0000;
+} */
+
+#ipara, #addiparaValue {
+    color: white;
+}
+
+#addipara {
+    opacity: 0.0;
+}
+

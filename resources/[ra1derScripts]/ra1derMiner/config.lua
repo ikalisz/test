@@ -1,0 +1,61 @@
+Config = {}
+Config.targetExport = "qb-target"                               -- The name of the Target export you are using ["qb-target", "qtarget", "bt-target"]
+Config.UseBlips = true   
+Config.BlipCoord = vector3(2929.832, 2797.154, 40.913)
+Config.MinerBlipText = "Mine Area"
+Config.SellBlipText = "Mineral Processing"
+Config.DebugPoly = false
+Config.SkillbarName = "tgiann-skillbar"                             	-- Must choose one of the avalible skillbars ["reload-skillbar","np-skillbar","qb-skillbar"]
+Config.SkillbarTime = 30000
+Config.ProgressbarTime = 12500
+Config.ProgressbarText = "dugging..."
+Config.MinerSoundName = "pick-axe" -- Interact-Sound Sound File Name
+Config.MinerSoundVolume = 0.3 -- Interact-Sound Volume Value
+Config.PickaxeProp = "prop_tool_pickaxe" -- Mining Progress and Animation Prop
+Config.Cashvalue = math.random(1500, 2400)
+Config.Metalvalue = math.random(1,5)
+Config.Coppervalue = math.random(1,4)
+Config.Ironvalue = math.random(1,3)
+Config.StonePrice = math.random(180, 220)
+Config.MetalPrice = math.random(225, 270)
+Config.CopperPrice = math.random(325, 365)
+Config.IronPrice = math.random(425, 475)
+Config.GoldPrice = math.random(600, 700)
+Config.DiamondPrice = math.random(959, 1050)
+Config.CaseItem = "case" --Grants this item with a 3 percent chance when mining
+Config.MinerItem = "pickaxe"
+Config.PickaxePrice = 50 --Pickaxe But Price
+Config.PedCoord = vector3(1078.622, -1970.94, 30.014)
+Config.PedHeading = 325.8
+Config.PedModels = "s_m_m_gaffer_01" -- Ped Models
+Config.MinerCarCoords = vector3(1074.120, -1949.16, 30.600)
+Config.MinerCarCoordHeading = 326.1
+Config.MinerCarPrice = 500
+Config.FuelScript = "np-fuel" -- or ps-fuel or lj-fuel - what ever you use
+Config.MaxSpeed = 35.0 -- = 79KMH
+
+Config.Text = {
+    ['cancel'] = 'It is cancelled.',
+	['not_found'] = "you couldn't find anything",
+	['you_failed'] = "you failed!",
+	['not_minerzone'] = "If you want to dig, you must be in the zone.!",
+	["already_car"] = "You already have a mining vehicle",
+	["not_enought_money"] = "You don't have enough money!",
+	["return_car"] = "The vehicle has been successfully delivered, your deposit will be paid.",
+	["error_car_message"] = "You did not rent a car to give or an error occurred!.",
+	["rent_car_message"] = "" ..Config.MinerCarPrice.. "Mine Rented for $, you will receive a deposit of $250 if you deliver it!",
+	["found_stone"] = "You found 1 stone",
+	["found_metal"] = "" .. Config.Metalvalue .. " you found metal",
+	["found_copper"] = " " .. Config.Coppervalue .. " You found pieces of Copper",
+	["found_iron"] = "" ..Config.Ironvalue.. " you found pieces of Iron",
+	["found_gold"] = "You found 1 piece of raw gold",
+	["found_diamond"] = "You found 1 rough diamond", 
+	["found_case"] = "You found an antique safe from the depths", 
+	["case_open"] = "You open the safe...",
+	["found_rolex"] = "A gold watch was found inside the safe.!",
+	["found_necklace"] = "A gold watch was found inside the safe.!",
+	["found_cash"] = "You opened the safe and " ..Config.Cashvalue .. "$ Output",
+	["buy_pickaxe"] = "You Bought Pickaxe",
+}
+
+

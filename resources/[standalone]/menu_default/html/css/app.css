@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i&display=swap&subset=latin-ext');
+
+:root {
+  --bg-color: #232833;
+  --box-shadow-data: 0px 0px 40px 0px rgba(92, 92, 92, 0);
+}
+
+.menu {
+  position: absolute;
+  min-width: 350px;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  text-transform: capitalize;
+  right: 16%;
+  top: 20%;
+  transform: translate(0, -20%);
+}
+
+.menu .head {
+  padding: .75rem 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, .80);
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow-data);
+  border-radius: 5px;
+}
+
+.head__title {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.head__description {
+  font-size: .875rem;
+  font-style: system-ui;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.926);
+}
+
+.menu .menu-items {
+  max-height: 600px;
+  overflow-y: hidden;
+}
+
+.menu .menu-items .menu-item {
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px 0;
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow-data);
+}
+
+.menu .menu-items .menu-item.selected {
+  background: linear-gradient(90deg, #2e547d 0%, #2b5583 100%);
+}
+
+.menu__icon {
+  position: relative;
+  height: 2.5rem;
+  background-color: #232833;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='https://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: .75rem 1rem;
+ }
